@@ -1,0 +1,358 @@
+::-webkit-scrollbar{
+    width:5px ;
+    height: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: black;
+    border-radius: 10px;
+    width: 5px;
+}
+
+
+*{
+
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+body{
+    background-color: rgb(238, 238, 238);
+}
+.logo{
+    width: 100px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.logo img{
+    width: 100px;
+    margin-top: -10px;
+    position: absolute;
+    top: -80px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color:transparent;
+    width: 80%;
+    margin: auto;
+    border-bottom:2px double darkgreen;
+    height: 100px;
+}
+ul {
+    display: flex;
+    gap:20px;
+    margin: 50px;
+}
+ul li{
+    list-style: none;
+    background-color: aquamarine;
+    width:100px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+ul li a{
+    text-decoration: none;
+}
+#about {
+    background-image: url('media1/Landing\ Page.png');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#location{
+    width: 100%;
+    height: 100vh;
+    background-image: url('media1/Untitled\ design2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom: 2px solid black;
+    padding-bottom: 20px;
+}
+.map-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100vh;
+    gap:30px
+}
+.map iframe{
+    width: 50vh;
+    height: 70vh;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.qouts{
+    width: 200px;
+    overflow: auto;
+    height: 300px;background-color: lightcyan;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:10px;
+    margin-top: 40vh;
+}
+#Friends{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    gap:100px;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url('media1/Untitled\ design.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
+.img-container{
+    display: flex;
+    width: 40%;overflow:scroll;
+    padding: 20px;
+    gap: 20px;
+    height: 400px;
+    position: relative;
+    left: 40px;
+    --ms-overflow-y: scroll;
+    border: 1px solid goldenrod;
+    border-radius: 10px;
+    background:linear-gradient(goldenrod, white)
+}
+.img-container::-webkit-scrollbar,.insta-ac,.name{
+    display: none;
+}
+img{
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}
+h1{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+.insta-container{
+    position: relative;
+    left: 40%;
+    margin-top: 50px;
+    width: 600px;
+}
+.profile{
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+    gap: 10px;
+    grid-template-rows: repeat(2,20px);
+
+}
+.s-no{
+    width:20px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.insta-ac{
+    width: 100px;
+    border-radius: 10px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: -20px;
+}
+.name{
+    width: 100px;
+    border-radius: 10px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    cursor: pointer;
+}
+div a{
+    text-decoration: none;
+    color: black;
+
+}
+div a,.name ,.s-no:hover{
+    color: rgb(81, 130, 130);
+    
+}
+i{
+    font-size: 30px;
+    color: rgb(10, 10, 10);
+}
+.bars{
+    display: none;
+}
+.bars {
+    display: none;
+}
+.close{
+    display: none;
+}
+
+@media only screen and (max-width: 480px) {
+    h1{
+        position: relative;
+        left: 10;
+    }
+    .profile{
+        display: grid;
+        grid-template-columns: repeat(3,50px);
+        gap: 20px;
+        grid-template-rows: repeat(2,20px);
+    
+    }
+    .insta-container{
+        position: relative;
+        left:70 ;
+        margin-top: 50px;
+        width: 300px;
+        overflow: scroll;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        height: 50vh;
+        position: absolute;
+        left:-40;
+        top:40;
+        width: 100%;
+        display: none;
+    }
+    nav ul li{
+        list-style: none;
+        background-color: transparent;
+        width:100px;
+        text-align: center;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 2px;
+        border: transparent;
+        margin-top: 10px;
+        border-bottom: 5px solid rgb(137, 188, 217);
+    }
+    nav ul li :hover{
+        color: rgb(12, 195, 219);
+    }
+
+    #about{
+        background-size: 400px;
+        background-position: center;
+    }
+    #location{
+        background-size: 400px;
+        background-position: center;
+
+    }
+    .map-container{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .map iframe{
+        width: 200px;
+        height: 300px;
+        position: relative;
+        left: 30px;
+        bottom: 20vh;
+    }
+    #Friends{
+        background-size: 400px;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+    }
+    p{
+        position: relative;
+        bottom:100px;
+
+    }
+    .img-container{
+        width: 300px;
+        height: 500px;
+        position: relative;
+        top:100px
+
+    }
+    img{
+        width: 300px;
+        height: 200px;
+        object-fit: contain;
+    }
+    .map iframe{
+        width: 200px;
+        height: 300px;
+    }
+
+    .bars{
+        position: relative;
+        top:40;
+    }
+    .bars{
+        display: block;
+    }
+    .close{
+        display:none ;
+        position: relative;
+        top:40px
+    }
+    .logo img{
+        position: relative;
+        top:-60;
+    }
+    .s-no,.insta-ac,.name{
+        font-size: 13px;
+    }
+
+  }
+  @media screen and (min-width: 481px)and (max-width:768px){
+    .insta-container{
+        position: absolute;
+        left: 25%;
+        margin-left: 20px;
+    }
+    #about{
+        background-size: 800px;
+        background-position: center;
+    }
+    #location{
+        background-size: 800px;
+        background-position: center;
+    }
+    #Friends{
+        background-size: 800px;
+        background-position: center;
+    }
+    nav ul li{
+        margin-left: 10px;
+        height: 20px;
+        width: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .s-no,.insta-ac,.name{
+        font-size: 14px;
+    }
+    
+  }
+  @media screen and(min-width:768px){
+    .s-no,.insta-ac,.name{
+        font-size: 10px;
+    }
+    
+  }
+  

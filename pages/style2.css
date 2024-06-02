@@ -1,0 +1,6 @@
+body{
+    overflow: hidden;
+    background-image: linear-gradient(lightblue,pink);
+    background-position: center;
+    background-size: 100px;
+}
